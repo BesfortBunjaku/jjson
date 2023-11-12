@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "jjson"
+version = "1.0.4"
+description = ""
+authors = ["BesfortBunjaku <bessffort@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.0"
+beautifulsoup4 = "^4.12.2"
+lxml = "^4.9.2"
+requests = "^2.28.2"
+
+
+[[tool.poetry.source]]
+name = "ppypi"
+url = "http://localhost:8080/"
+default = false
+secondary = true
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
